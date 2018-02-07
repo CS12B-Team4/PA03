@@ -10,6 +10,7 @@ import javax.swing.*;
  * on the board and bounce off the edges, but whose radius grows and shrinks.
 */
 public class RotateCircle extends CircleShape{
+  
   public static int myFrame=0;
   private double count=1;
   private int startX;
