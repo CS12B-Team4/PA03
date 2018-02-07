@@ -7,7 +7,7 @@ package pa03;
 */
 public class ColorDepthCircle extends CircleShape{
 
-  
+
   private int depth=20;
 	/**
 	 * create a radius changing circle and set the color to yellow
@@ -18,8 +18,8 @@ public class ColorDepthCircle extends CircleShape{
   }
 
 	/**
-	 * update the circle as usual, but also change the radius. If it gets too big,
-	 * then start it shrinking, if it gets too small then start it growing.
+	 * update the circle as usual, but also change the transparence of the circle
+	 * the transparence will go deeper, but it is very deep, the transparence will go more transparent.
 	 */
   public void update(double dt){
 
