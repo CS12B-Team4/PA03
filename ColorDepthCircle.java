@@ -7,6 +7,7 @@ package pa03;
 */
 public class ColorDepthCircle extends CircleShape{
 
+  
   private int depth=20;
 	/**
 	 * create a radius changing circle and set the color to yellow
