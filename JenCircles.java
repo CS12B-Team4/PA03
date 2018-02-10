@@ -17,11 +17,10 @@ public class JenCircles extends CircleShape{
 	}
 
 	public void keepOnBoard(){
-		super.keepOnBoard();
 
 		if (this.x < this.radius) {
 			//it went off the left edge
-			this.rate = 0.7;
+			this.rate = 0.5;
        		this.vx = -(this.vx*rate);
 			this.x = this.radius;
 	
@@ -42,7 +41,7 @@ public class JenCircles extends CircleShape{
 
 		} else if (this.y > CircleShape.boardHeight-this.radius) {
 				// it went below the bottom edge!
-			this.rate = 0.7; 
+			this.rate = 0.5; 
         	this.vy = -(this.vy * rate);
 			this.y = CircleShape.boardHeight-this.radius;
 		}
