@@ -17,7 +17,7 @@ public class Demo extends JPanel implements ActionListener {
 
 		public Demo(){
 			super();
-			this.model = new DrawingModel(50);
+			this.model = new DrawingModel(70);
 		}
 
     /**
