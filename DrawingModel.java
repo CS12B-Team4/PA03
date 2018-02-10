@@ -28,7 +28,7 @@ public class DrawingModel {
 	*/
 	private void init(){
 		CircleShape c;
-		for(int i=0; i< circles.length/3; i++){
+		for(int i=0; i< circles.length/7; i++){
 			// we go to circles.length/2 as we add 2 different kinds of circles
 			// each time through this loop.. with 5 classes you'll divide by 5
 			// WHEN YOU ADD ANOTHER SUBCLASS OF CIRCLESHAPE YOU NEED TO
@@ -36,12 +36,23 @@ public class DrawingModel {
 			c = new CircleShape();
 			this.add(c);
 
-      c = new RadiusChangingCircle();
-      this.add(c);
+      			c = new RadiusChangingCircle();
+      			this.add(c);
 
+			c = new RotateCircle();
+			this.add(c);
+			
+			c = new JenCircles();
+			this.add(c);
+			
+			c = new ColorDepthCircle();
+			this.add(c);
+			
+			c = new AddingCircle();
+			this.add(c);
+			
 			c = new ChangingShapeCircle();
-      this.add(c);
-
+      			this.add(c);
 		}
 	}
 
