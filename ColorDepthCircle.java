@@ -2,24 +2,24 @@ package pa03;
 
 
 /**
- * RadiusChangingCircles are yellow circles which move at a constant velocity
- * on the board and bounce off the edges, but whose radius grows and shrinks.
+ * ColorDepthCircle can change circles' color depth. It can change the transparence of the circles.
+   The transparence will change from very dark to light. Then they will change from very light to dark, and
+   repeats this process over and over again.
 */
 public class ColorDepthCircle extends CircleShape{
 
 
-  private int depth=20;
-	/**
-	 * create a radius changing circle and set the color to yellow
-	 */
+  private int depth=20; //the transparence of the circle's color
+
   public ColorDepthCircle(){
     super();
-    this.color = new java.awt.Color(200,150,255,this.depth); // transparent blue
+    this.color = new java.awt.Color(200,150,255,this.depth); // transparent purple
   }
 
 	/**
 	 * update the circle as usual, but also change the transparence of the circle
-	 * the transparence will go deeper, but it is very deep, the transparence will go more transparent.
+	 * the transparence will go deeper, but it is very deep, the transparence will go to be more transparent.
+   The program will repeat this process over and over again.
 	 */
   public void update(double dt){
 
